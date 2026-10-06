@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: paket-avi
+    runtime: static
+    buildCommand: echo "Statik site, derleme yok"
+    staticPublishPath: .

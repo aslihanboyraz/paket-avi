@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paket Avı</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23070b14'/%3E%3Crect x='6' y='8' width='20' height='6' rx='2' fill='%233ee0c5'/%3E%3Crect x='6' y='18' width='12' height='6' rx='2' fill='%23ff5d8f'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=IBM+Plex+Mono:wght@600;700&family=IBM+Plex+Sans:wght@500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="sky" aria-hidden="true">
+      <span class="grid"></span>
+      <span class="orb orb-a"></span>
+      <span class="orb orb-b"></span>
+    </div>
+
+    <main class="app">
+      <header class="hero">
+        <h1><span>Paket</span> Avı</h1>
+        <p class="tagline">Doğru protokolü yakala. Zararlıyı geçirme. Seviye arttıkça hat hızlanır.</p>
+      </header>
+
+      <section class="panel">
+        <div class="hud">
+          <article class="chip"><span>Puan</span><strong id="score">0</strong></article>
+          <article class="chip"><span>Seviye</span><strong id="level">1</strong></article>
+          <article class="chip"><span>Seri</span><strong id="streak">0</strong></article>
+          <article class="chip"><span>En iyi</span><strong id="best">0</strong></article>
+        </div>
+
+        <p class="target" id="target">Yakala · HTTPS</p>
+        <p class="info" id="info">Web trafiğini şifreler.</p>
+        <div class="lives" id="lives" aria-label="Can"></div>
+
+        <div class="field" id="field">
+          <div class="catcher" id="catcher">FW</div>
+          <div class="veil" id="veil">
+            <h2 id="veil-title">Hat hazır</h2>
+            <p id="veil-text">Fare veya ok tuşlarıyla güvenlik duvarını kaydır. Yalnızca istenen protokolü yakala.</p>
+            <button type="button" id="play">Başla</button>
+          </div>
+        </div>
+
+        <p class="status" id="status">Zararlı paket duvardan geçmeli. Onu yakalamak can götürür.</p>
+        <div class="glossary" id="glossary" aria-label="Protokol sözlüğü"></div>
+      </section>
+
+      <p class="signature">Aslıhan Boyraz</p>
+    </main>
+
+    <div class="fx" id="fx" aria-hidden="true"></div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
